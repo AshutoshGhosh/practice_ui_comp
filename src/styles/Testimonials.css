@@ -1,0 +1,84 @@
+.testimonials-container {
+    width: 90%;
+    margin: 0 auto;
+    /* padding: 20px; */
+    text-align: center;
+  }
+  
+  .testimonial-card-container {
+    display: flex;
+    justify-content: center; /* Center the cards */
+    overflow: hidden; /* Hide overflow for carousel effect */
+    padding: 40px 0;
+    transition: transform 0.5s ease; /* Smooth transition for carousel */
+  }
+  
+  .testimonial-card {
+    background: rgba(255, 255, 255, 0.1); /* Transparent background */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Light border */
+    border-radius: 15px;
+    backdrop-filter: blur(10px); /* Glass effect */
+    padding: 20px;
+    margin: 10px; /* Space between cards */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    color: inherit; /* Text color */
+    width: calc(20% - 20px); /* Adjust width for 5 cards minus margins */
+    min-width: 250px; /* Minimum width for cards */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+    position: relative; /* Position for pseudo-elements */
+  }
+  
+  .testimonial-card:hover {
+    transform: scale(1.05); /* Scale up effect on hover */
+    box-shadow: 0 8px 50px rgba(0, 0, 0, 0.5); /* Enhanced shadow on hover */
+  }
+  
+  .testimonial-image {
+    width: 60px; /* Set a fixed width for images */
+    height: 60px; /* Set a fixed height for images */
+    border-radius: 50%; /* Circular images */
+    margin-bottom: 15px; /* Space below image */
+    border: 2px solid white; /* White border around the image */
+  }
+  
+  .testimonial-message {
+    font-style: italic; /* Italicize the message */
+    margin: 10px 0; /* Margin above and below the message */
+  }
+  
+  .testimonial-name {
+    font-weight: bold; /* Bold the name */
+  }
+  
+  .carousel-buttons {
+    margin-top: 20px;
+  }
+  
+  .carousel-buttons button {
+    background-color: transparent;
+    border: 1px solid white;
+    color: inherit;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px;
+    margin: 0 10px;
+    border-radius: 5px; /* Add slight border-radius */
+    transition: background-color 0.3s;
+  }
+  
+  .carousel-buttons button:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Change background on hover */
+  }
+  
+
+  @media (max-width: 768px) {
+    .testimonial-card {
+      width: 45%; /* Use wider cards for smaller screens */
+    }
+  }
+  @media (max-width: 480px) {
+    .testimonial-card {
+      width: 90%; /* Stack cards on mobile */
+    }
+  }
+  
